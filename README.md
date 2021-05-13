@@ -16,7 +16,7 @@ project.
 I went in a created a rough layout to start with using Adobe XD. First time
 using the software. It is very handy to create a layout!
 
-![Screenshot](mobile@3x.png)
+<img src="mobile@3x.png" alt="drawing" width="200" height="400PX"/>
 
 ### Building the Design
 
