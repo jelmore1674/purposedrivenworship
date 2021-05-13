@@ -1,0 +1,87 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14px;
+}
+
+#nav {
+    background-image: url('./images/herocross.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 190px;
+    height: 190px;
+    position: relative;
+    text-align: center;
+}
+
+.nav-bar {
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    /* background-color: #010101; */
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding: 15px;
+    width: 100%;
+}
+
+#tagline {
+    padding: 15px;
+    padding-top: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.nav-bar>#nav-seciton>h1 {
+    padding: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.card {
+    height: auto;
+    width: 500px;
+    background-color: white;
+    border: 3px solid #707070;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+}
+
+.card>p {
+    text-align: left;
+}
+
+.card>img {
+    height: 237px;
+    width: 290px;
+    border-radius: 10px;
+}
