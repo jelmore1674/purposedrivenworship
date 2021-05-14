@@ -116,12 +116,18 @@ ul {
     margin: 10px;
 }
 
+.wrapper {
+    min-height: calc(100vh-90px);
+}
+
 .footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 20px;
     display: flex;
+    height: 90px;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
 }
