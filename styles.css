@@ -34,6 +34,7 @@ html body {
 }
 
 h1 {
+    text-shadow: 0 3px 6px black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 1.5rem;
@@ -84,4 +85,81 @@ h1 {
     height: 237px;
     width: 290px;
     border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+#schedule>ul {
+    text-align: left;
+    font-style: italic;
+    columns: 2;
+}
+
+.list-emp {
+    text-align: left;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#clips {
+    text-align: center;
+}
+
+#clip-container {
+    display: flex;
+    justify-content: center;
+}
+
+.videos {
+    margin: 10px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#label {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 508px) {
+    #nav {
+        background-image: url('./images/herocross.jpeg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 150px;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    #tagline {
+        font-size: 12px;
+    }
+    .card {
+        max-width: 300px;
+    }
+    .card>img {
+        max-height: 137px;
+        max-width: 190px;
+    }
+    #clip-container {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

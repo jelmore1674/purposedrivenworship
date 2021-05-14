@@ -24,3 +24,10 @@ So now, I am currently working on building the design. So I started out by
 creating the _index.html_ file and creating the html code for the projec. As I
 am building the html, I am doing the CSS of the project in sections. Mainly so I
 can keep my CSS in order with the direction of the page.
+
+---
+
+#### Quick Update
+
+So I have a rough draft of the mobile design. I have added a _location.html_
+That way I can put a link to a map with the site.
