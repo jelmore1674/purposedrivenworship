@@ -24,14 +24,15 @@ html body {
 }
 
 .nav-bar {
-    text-align: center;
     margin-top: 0;
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     /* background-color: #010101; */
 }
 
 h1 {
-    text-align: left;
     margin-left: 20px;
     text-shadow: 0 3px 6px black;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -43,11 +44,30 @@ h1 {
     margin-bottom: 0;
 }
 
+.nav-items ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+.nav-items a:hover {
+    color: #fbae54;
+    font-size: 1.1rem;
+}
+
 #hero {
     margin-top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 #tagline {
@@ -59,28 +79,43 @@ h1 {
     letter-spacing: 4px;
     line-height: 200%;
     color: #21152d;
+    text-shadow: 1px 1px 3px black;
     /* background-color: #648cc9; */
 }
 
 #purpose {
     color: #fbae54;
+    text-shadow: 1px 1px 3px #21152d;
 }
 
 .nav-bar>#nav-seciton>h1 {
     padding: 10px;
 }
 
+#info-cards {
+    display: flex;
+}
+
 .card-container {
     color: white;
+    background-color: #648cc9;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container h3 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 3px #21152d;
 }
 
 .card {
     height: auto;
-    width: 100%;
-    background-color: #648cc9;
+    width: 66%;
     justify-content: center;
     text-align: center;
     padding: 10px;
+    font-size: 1.5rem;
 }
 
 #sched-div {
@@ -92,8 +127,8 @@ h1 {
 }
 
 .card>img {
-    height: 237px;
-    width: 290px;
+    height: 337px;
+    width: 390px;
     border-radius: 10px;
 }
 
@@ -131,6 +166,7 @@ ul {
 }
 
 .footer {
+    margin-top: 0;
     background-color: #21152d;
     color: white;
     text-align: center;
@@ -140,11 +176,13 @@ ul {
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .footer a {
     text-decoration: none;
     color: white;
+    font-size: 1.75rem;
 }
 
 #label {
@@ -156,6 +194,9 @@ ul {
         margin: 0;
         font-size: 1.3rem;
         text-align: center;
+    }
+    .nav-items {
+        display: none;
     }
     #tagline {
         display: flex;
@@ -169,9 +210,12 @@ ul {
     #tagline h2 {
         font-weight: 400;
     }
-    .card-container {
-        display: inline-block;
+    #info-cards {
+        flex-direction: column;
         margin: 0;
+    }
+    .card-container {
+        width: 100%;
     }
     .card {
         width: 100vw;
