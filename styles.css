@@ -242,6 +242,28 @@ ul {
 }
 
 
+/* Map Page */
+
+#map {
+    margin-top: 8vh;
+}
+
+.map {
+    padding: 2rem;
+}
+
+.map-container {
+    text-align: center;
+}
+
+.map-container h1 {
+    color: #21152d;
+    text-shadow: 1px 1px 3px #fbae54;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+
 /* Tablet Breakpoint */
 
 @media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
@@ -373,6 +395,10 @@ ul {
     }
     #preach-img {
         display: none;
+    }
+    /* Map Page */
+    .map iframe {
+        width: 100%;
     }
 }
 
